@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;
+}
+
+
+.container {
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #123354;
+    height: 70px;
+}
+
+.blockNav {
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blockNav a {
+    font-size: 40px;
+    color: #FFFFFF;
+    font-family: "Akaya Kanadaka", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navBtn {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.navBtn a {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: "Akaya Kanadaka", system-ui;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.navBtn a:hover,
+.blockNav a:hover {
+    color: #CCCCCC;
+}
+
+.secHome {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blockhome {
+    width: 1000px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0px;
+    gap: 20px;
+}
+
+.blockhome h1 {
+    font-size: 60px;
+    color: #123354;
+    font-family: "Akaya Kanadaka", system-ui;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.anonimtext {
+    font-size: 40px;
+    color: #123354;
+    font-family: "Akaya Kanadaka", system-ui;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.information {
+    opacity: 0.8;
+    width: 550px;
+    font-size: 20px;
+    color: #123354;
+    font-family: "Akaya Kanadaka", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.secskills {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+
+.blockskills {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0px;
+    gap: 20px;
+}
+
+.blockfront,
+.blockback {
+    width: 80%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: #F7F7F7;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 0px 20px;
+}
+
+.blockfront p,
+.blockback p {
+    display: flex;
+    flex-direction: column;
+    color: #123354;
+    font-family: "Akaya Kanadaka", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.blockskills h1 {
+    font-size: 40px;
+    color: #123354;
+    font-family: "Akaya Kanadaka", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.blockskills h2 {
+    font-size: 20px;
+    color: #123354;
+    font-family: "Akaya Kanadaka", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}

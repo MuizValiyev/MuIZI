@@ -1,0 +1,93 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <title>MuIZI - Portfolio</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="blockNav">
+                <a href="{% url 'home' %}">MuIZI</a>
+                <div class="navBtn">
+                    <a href="#home">Home</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+        <section class="secHome">
+            <div class="blockhome">
+                <h1>MuIZI</h1>
+                <div class="anonimtext">
+                    <span id="anonimtext"></span>
+                </div>
+                <p class="information">I am a developer with a deep interest in creating scalable and efficient web
+                    applications. I work with both Frontend and Backend, striving to deliver seamless and user-friendly
+                    digital solutions.</p>
+            </div>
+        </section>
+        <section class="secskills">
+            <div class="blockskills">
+                <h1>Skills</h1>
+                <h2>FrontEnd</h2>
+                <div class="blockfront">
+                    <div class="block">
+                        <p>HTML</p>
+                        <p>advanced</p>
+                    </div>
+                    <div class="block">
+                        <p>CSS</p>
+                        <p>advanced</p>
+                    </div>
+                    <div class="block">
+                        <p>JavaScript</p>
+                        <p>intermediate</p>
+                    </div>
+                    <div class="block">
+                        <p>Bootstrap</p>
+                        <p>basic</p>
+                    </div>
+                    <div class="block">
+                        <p>Git</p>
+                        <p>intermediate</p>
+                    </div>
+                </div>
+                <h2>BackEnd</h2>
+                <div class="blockback">
+                    <div class="block">
+                        <p>Python</p>
+                        <p>intermediate</p>
+                    </div>
+                    <div class="block">
+                        <p>Flask</p>
+                        <p>basic</p>
+                    </div>
+                    <div class="block">
+                        <p>Django</p>
+                        <p>intermediate</p>
+                    </div>
+                    <div class="block">
+                        <p>MySQL</p>
+                        <p>basic</p>
+                    </div>
+                    <div class="block">
+                        <p>Rest API</p>
+                        <p>basic</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
