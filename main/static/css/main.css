@@ -39,6 +39,7 @@ body {
     height: 100%;
     font-family: 'Poppins', sans-serif;
     background-color: #FFFFFF;
+    scroll-behavior: smooth;
 }
 
 
@@ -52,10 +53,12 @@ nav {
     justify-content: center;
     background-color: #123354;
     height: 70px;
+    position: fixed;
 }
 
 .blockNav {
     width: 1000px;
+    padding: 0px 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -83,6 +86,45 @@ nav {
     font-style: normal;
 }
 
+#popupOpen {
+    display: none;
+    background-color: #123354;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: #FFFFFF;
+    margin-top: 70px;
+    color: #FFFFFF;
+}
+
+.popup.show {
+    display: block;
+}
+
+.popup a {
+    width: 95%;
+    height: 50px;
+    background-color: #123354;
+    color: #FFFFFF;
+    border-radius: 10px;
+    justify-content: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-family: "Akaya Kanadaka", system-ui;
+    font-weight: 900;
+    margin-top: 10px;
+    font-style: normal;
+    margin-left: 2.5%;
+}
+
 .navBtn a:hover,
 .blockNav a:hover {
     color: #CCCCCC;
@@ -94,6 +136,11 @@ nav {
     align-items: center;
     justify-content: center;
 }
+#skills, #projects, #contacts {
+    height: 60px;
+    width: 100%;
+    background: transparent;
+}
 
 .blockhome {
     width: 1000px;
@@ -102,7 +149,7 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 50px 0px;
+    padding: 120px 0px 60px 0px;
     gap: 20px;
 }
 
@@ -239,13 +286,14 @@ nav {
     border-radius: 10px;
 }
 
-.oneproject p{
+.oneproject p {
     font-size: 20px;
     color: #123354;
     font-family: "Akaya Kanadaka", system-ui;
     font-weight: 400;
     font-style: normal;
 }
+
 .oneproject a {
     font-size: 20px;
     color: #123354;
@@ -253,9 +301,10 @@ nav {
     font-weight: 400;
     font-style: normal;
     opacity: 0.8;
+    z-index: 1;
 }
 
-.oneproject a:hover{
+.oneproject a:hover {
     opacity: 1;
 }
 
@@ -322,17 +371,19 @@ nav {
     font-weight: 400;
     font-style: normal;
     opacity: 0.8;
+    z-index: 1;
 }
 
-.onecontact a:hover{
+.onecontact a:hover {
     opacity: 1;
 }
 
-.contacthead{
+.contacthead {
     color: #123354;
     font-family: "Akaya Kanadaka", system-ui;
     font-weight: 900;
-    font-style: normal;}
+    font-style: normal;
+}
 
 footer {
     width: 100%;
@@ -352,7 +403,7 @@ footer {
     gap: 20px;
 }
 
-.blockfooter h1{
+.blockfooter h1 {
     font-size: 40px;
     color: #FFFFFF;
     font-family: "Akaya Kanadaka", system-ui;
@@ -360,32 +411,147 @@ footer {
     font-style: normal;
 }
 
-.row{
+.row {
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
-.row a{
+
+.row a {
     color: #FFFFFF;
     font-family: "Akaya Kanadaka", system-ui;
     font-weight: 900;
     font-style: normal;
 }
-.row a:hover{
+
+.row a:hover {
     color: #CCCCCC;
 }
 
-.rowsocial{
+.rowsocial {
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
 
-.svgsfooter{
+.svgsfooter {
     width: 24px;
     height: 24px;
 }
 
-.svgsfooter:hover{
-    color:#CCCCCC;
+.svgsfooter:hover {
+    color: #CCCCCC;
 }
+
+@media screen and (max-width:1440px) {}
+
+@media screen and (max-width:1280px) {}
+
+@media screen and (max-width:1024px) {}
+
+@media screen and (max-width:1000px) {
+
+    .blockhome,
+    blockskills,
+    .blockprojects,
+    .blockcontact {
+        width: 100%;
+    }
+
+    .projectsgrid {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .blockback,
+    .blockfront {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:670px) {
+    .oneproject {
+        width: 263px;
+        height: 190px;
+    }
+
+    .oneproject img {
+        width: 223px;
+        height: 107px;
+    }
+
+    .onecontact {
+        width: 263px;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .contactgrid {
+        grid-template-columns: auto;
+    }
+
+    .oneproject {
+        width: 233px;
+        height: 170px;
+    }
+
+    .oneproject img {
+        width: 193px;
+        height: 97px;
+    }
+
+    .information {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    .blockfront,
+    .blockback {
+        grid-template-columns: auto auto auto;
+        gap: 30px 0px;
+        height: 150px;
+    }
+
+    .projectsgrid {
+        grid-template-columns: auto;
+    }
+
+    .oneproject {
+        width: 313px;
+        height: 220px;
+    }
+
+    .oneproject img {
+        width: 275px;
+        height: 137px;
+    }
+
+    .navBtn {
+        display: none;
+    }
+
+    #popupOpen {
+        display: block;
+    }
+    .information, .oneproject a, .contactbody, .onecontact a{
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:425px) {}
+
+@media screen and (max-width:375px) {
+
+    .blockfront,
+    .blockback {
+        grid-template-columns: auto auto;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:325px) {}

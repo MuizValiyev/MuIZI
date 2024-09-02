@@ -21,9 +21,20 @@
                     <a href="#projects">Projects</a>
                     <a href="#contact">Contact</a>
                 </div>
+                <button id="popupOpen">
+                    <img id="burger" class="burger" src="{% static 'img/list.svg' %}" alt="Menu">
+                </button>
+            </div>
+            <div class="popup" id="popup">
+                <a href="#home">Home</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
             </div>
         </nav>
-        <section class="secHome">
+        
+        
+        <section id="home" class="secHome">
             <div class="blockhome">
                 <h1>MuIZI</h1>
                 <div class="anonimtext">
@@ -34,6 +45,9 @@
                     digital solutions.</p>
             </div>
         </section>
+
+        <div id="skills"></div>
+
         <section class="secskills">
             <div class="blockskills">
                 <h1>Skills</h1>
@@ -85,6 +99,9 @@
                 </div>
             </div>
         </section>
+
+        <div id="projects"></div>
+
         <section class="secprojects">
             <div class="blockprojects">
                 <h1>Projects</h1>
@@ -99,6 +116,9 @@
                 </div>
             </div>
         </section>
+
+        <div id="contact"></div>
+
         <section class="seccontact">
             <div class="blockcontact">
                 <h1>Contact</h1>
@@ -118,6 +138,8 @@
                 </div>
             </div>
         </section>
+
+
         <footer>
             <div class="blockfooter">
                 <h1>MuIZI</h1>
