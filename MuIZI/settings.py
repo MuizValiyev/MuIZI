@@ -1,4 +1,5 @@
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -11,10 +12,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-b5%xku#u0er19$_(m2xc2cd4b&g2azef$r6wnux70*d%-)2*63'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+# DEBUG = bool(int(os.environ.get("DEBUG", True)))
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+# ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS", "127.0.0.1").split(" ")
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -106,10 +108,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / 'static/'
 
-MEDIA_ROOT = BASE_DIR / 'media/'
 MEDIA_URL = 'media/'
+MEDIA_ROOT = BASE_DIR / 'media/'
 
+# STATICFILES_DIRS = [
+#     BASE_DIR / "static",
+# ]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
