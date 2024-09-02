@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from .models import Projects
 
 def home(request):
-    return render(request, 'home.html')
+    project = Projects.objects.order_by('-date')[:6]
+    return render(request, 'home.html', {'project':project})

@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>MuIZI - Portfolio</title>
 </head>
 
@@ -84,8 +85,57 @@
                 </div>
             </div>
         </section>
-    </div>
+        <section class="secprojects">
+            <div class="blockprojects">
+                <h1>Projects</h1>
+                <div class="projectsgrid">
+                    {% for projects in project %}
+                    <div class="oneproject">
+                        <img src="{{ projects.image.url }}">
+                        <p>{{ projects.title }}</p>
+                        <a href="{{ projects.link }}">View</a>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+        <section class="seccontact">
+            <div class="blockcontact">
+                <h1>Contact</h1>
+                <div class="contactgrid">
+                    <div class="onecontact">
+                        <img class="svgs" src="{% static 'img/mail.svg' %}">
+                        <p class="contacthead">Email</p>
+                        <p class="contactbody">valiyevmuiz0407@gmail.com</p>
+                        <a target="_blank" href="mailto:valiyevmuiz0407@gmail.com">message</a>
+                    </div>
+                    <div class="onecontact">
+                        <img class="svgs" src="{% static 'img/telegram.svg' %}">
+                        <p class="contacthead">Telegram</p>
+                        <p class="contactbody">+998335111728</p>
+                        <a target="_blank" href="https://t.me/muizxoja">message</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="blockfooter">
+                <h1>MuIZI</h1>
+                <div class="row">
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="rowsocial">
+                    <a target="_blank" href="https://t.me/muizxoja"><img class="svgsfooter" src="{% static 'img/telegram white.svg' %}"></a>
+                    <a target="_blank" href="https://github.com/MuizValiyev"><img class="svgsfooter" src="{% static 'img/github.svg' %}"></a>
+                </div>
+            </div>
+        </footer>
 
+
+
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="{% static 'js/main.js' %}"></script>
 </body>

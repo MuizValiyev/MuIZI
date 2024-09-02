@@ -65,7 +65,7 @@ nav {
     font-size: 40px;
     color: #FFFFFF;
     font-family: "Akaya Kanadaka", system-ui;
-    font-weight: 400;
+    font-weight: 900;
     font-style: normal;
 }
 
@@ -124,7 +124,7 @@ nav {
 
 .information {
     opacity: 0.8;
-    width: 550px;
+    width: 55%;
     font-size: 20px;
     color: #123354;
     font-family: "Akaya Kanadaka", system-ui;
@@ -178,7 +178,7 @@ nav {
     font-size: 40px;
     color: #123354;
     font-family: "Akaya Kanadaka", system-ui;
-    font-weight: 400;
+    font-weight: 900;
     font-style: normal;
 }
 
@@ -186,6 +186,206 @@ nav {
     font-size: 20px;
     color: #123354;
     font-family: "Akaya Kanadaka", system-ui;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secprojects {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blockprojects {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0px;
+    gap: 20px;
+}
+
+.blockprojects h1 {
+    font-size: 40px;
+    color: #123354;
+    font-family: "Akaya Kanadaka", system-ui;
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+.projectsgrid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+.oneproject {
+    width: 313px;
+    height: 220px;
+    display: flex;
+    background-color: #F1F1F1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.oneproject p{
+    font-size: 20px;
+    color: #123354;
+    font-family: "Akaya Kanadaka", system-ui;
     font-weight: 400;
     font-style: normal;
+}
+.oneproject a {
+    font-size: 20px;
+    color: #123354;
+    font-family: "Akaya Kanadaka", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    opacity: 0.8;
+}
+
+.oneproject a:hover{
+    opacity: 1;
+}
+
+.oneproject img {
+    width: 275px;
+    height: 137px;
+    border-radius: 10px;
+    border: 1px #123354 solid;
+}
+
+.seccontact {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+
+.blockcontact {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0px;
+    gap: 20px;
+}
+
+.blockcontact h1 {
+    font-size: 40px;
+    color: #123354;
+    font-family: "Akaya Kanadaka", system-ui;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.contactgrid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+
+.onecontact {
+    width: 313px;
+    height: 150px;
+    display: flex;
+    background-color: #F1F1F1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    gap: 5px;
+}
+
+.svgs {
+    width: 24px;
+    height: 24px;
+}
+
+.contactbody,
+.onecontact a {
+    color: #123354;
+    font-family: "Akaya Kanadaka", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    opacity: 0.8;
+}
+
+.onecontact a:hover{
+    opacity: 1;
+}
+
+.contacthead{
+    color: #123354;
+    font-family: "Akaya Kanadaka", system-ui;
+    font-weight: 900;
+    font-style: normal;}
+
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #123354;
+}
+
+.blockfooter {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0px;
+    gap: 20px;
+}
+
+.blockfooter h1{
+    font-size: 40px;
+    color: #FFFFFF;
+    font-family: "Akaya Kanadaka", system-ui;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.row a{
+    color: #FFFFFF;
+    font-family: "Akaya Kanadaka", system-ui;
+    font-weight: 900;
+    font-style: normal;
+}
+.row a:hover{
+    color: #CCCCCC;
+}
+
+.rowsocial{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.svgsfooter{
+    width: 24px;
+    height: 24px;
+}
+
+.svgsfooter:hover{
+    color:#CCCCCC;
 }
